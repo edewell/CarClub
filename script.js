@@ -27,7 +27,11 @@ let guessinggame = prompt("I am thinking of American Muscle");
          alert("right");
       }
       else if (guessinggame !== "Dodge"){
-         alert("wrong")
-      }
+         alert("wrong")}
 
+attempts = 0;
 
+while(attempts < 3){
+   prompt("I am thinking of American Muscle")
+   attempts = attempts +1;
+}
