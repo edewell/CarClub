@@ -29,5 +29,3 @@ let guessinggame = prompt("I am thinking of American Muscle");
       else if (guessinggame !== "Dodge"){
          alert("wrong")
       }
-
-
