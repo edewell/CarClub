@@ -5,6 +5,7 @@ let company = prompt('Which company created the 350z?', '');
 
    if (company == 'Nissan'){
       alert("right");
+
    }
    else if (company !== 'Nissan'){
       alert("wrong");
@@ -27,12 +28,20 @@ let guessinggame = prompt("I am thinking of American Muscle");
          alert("right");
       }
       else if (guessinggame !== "Dodge"){
-         alert("wrong")
+         alert("wrong");
       }
 
 attempts = 0;
+var correct = false;
+while(correct == false){
+   let guessinggame = prompt("I am thinking of American Muscle");
 
-while(attempts < 1){
-   prompt("I am thinking of American Muscle");
-   attempts = attempts +1;
+      
+   if (guessinggame == "Dodge"){
+      alert("right");
+      correct = true;
+   }
+   else if (guessinggame !== "Dodge"){
+      alert("wrong");
+   }
 }
