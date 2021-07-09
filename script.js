@@ -21,16 +21,6 @@ let question = prompt('Are you a car lover?', "");
          alert("its ok")
       }
 
-let guessinggame = prompt("I am thinking of American Muscle");
-
-      
-      if (guessinggame == "Dodge"){
-         alert("right");
-      }
-      else if (guessinggame !== "Dodge"){
-         alert("wrong");
-      }
-
 attempts = 0;
 var correct = false;
 while(correct == false){
@@ -46,3 +36,15 @@ while(correct == false){
    }
 }
 
+function starGenerator(){
+   var rating = prompt("Leave a rating 1-5");
+      for (let i = 0; i < rating; i++){
+         var starCount = document.createElement('img');
+         starCount.setAttribute("src", "https://i.pinimg.com/736x/3f/5f/10/3f5f10db59ca963cc07ea32f7f7352fb.jpg");
+         starCount.setAttribute("height", "200");
+         starCount.setAttribute("width", "200");
+         starCount.setAttribute("alt", "Honda Civic");
+         document.body.appendChild(starCount);
+      }
+
+}
