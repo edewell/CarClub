@@ -46,5 +46,5 @@ function starGenerator(){
          starCount.setAttribute("alt", "Honda Civic");
          document.body.appendChild(starCount);
       }
-
-}
+   
+   }
